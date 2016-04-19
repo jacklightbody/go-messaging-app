@@ -1,0 +1,6 @@
+{
+    "Database": "SimpleMessaging",
+    "User": "root",
+    "Password": "cheesers",
+    "Host": "127.0.0.1:3306"
+}

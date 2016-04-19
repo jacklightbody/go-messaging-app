@@ -1,5 +1,6 @@
 {
     "Database": "SimpleMessaging",
     "User": "user",
-    "Password": "root"
+    "Password": "root",
+    "Host": "localhost"
 }

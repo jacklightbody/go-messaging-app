@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.12)
 # Database: SimpleMessaging
-# Generation Time: 2016-04-18 01:28:00 +0000
+# Generation Time: 2016-04-19 04:04:44 +0000
 # ************************************************************
 
 
@@ -27,15 +27,12 @@ DROP TABLE IF EXISTS `Messages`;
 
 CREATE TABLE `Messages` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `to` char(255) NOT NULL DEFAULT '',
-  `from` char(255) NOT NULL DEFAULT '',
-  `timestamp` int(11) NOT NULL,
+  `recipient` char(255) NOT NULL DEFAULT '',
+  `sender` char(255) NOT NULL DEFAULT '',
   `body` text NOT NULL,
+  `sent_at` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-
-
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
